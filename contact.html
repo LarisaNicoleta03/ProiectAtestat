@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="subscribe">
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">
+          Subscribe to my blog!
+        </button>
+      </form>
+    </div>
+  </header>
+
+
+
+  <div class="menu" onclick="openArticles()">Universul</div>
+  <div class="menu" onclick="openReviews()">Sistemul Solar</div>
+  <div class="menu" onclick="openPlanete()">Planetele</div>
+  <div class="menu" onclick="openContact()">Contact</div>
+
+  <h2 class="titlu_contact">Pentru orice curiozitate sau întrebare, nu ezitați să ne contactați prin completarea
+    formularului de mai jos.</h2>
+  <div class="container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="639749a7-35a3-4898-bfc5-a3c7c54bcbce">
+
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first_name" placeholder="Your name..." required>
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last_name" placeholder="Your last name..." required>
+
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="Romania">Romania</option>
+        <option value="Greece">Greece</option>
+        <option value="Italy">Italy</option>
+        <option value="Germany">Germany</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Bulgaria">Bulgaria</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+
+
+  </div>
+  <div class="review">
+    <p class="descript">
+      Bibliografia poate fi consultată <a href="bibliografie.html">aici</a>
+    </p>
+
+  </div>
+
+
+
+  <footer>
+    <p>Autori: Iamandei Larisa & Ivanciu Octavian<br>
+      © 2024 Toate drepturile ne sunt rezervate!!!
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

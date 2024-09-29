@@ -1,0 +1,262 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.legenda {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.solar-system {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.textlegenda {
+    color: white;
+}
+
+.dot0 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #ff0;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot1 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #C0C0C0;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #fc9;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot3 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #36f;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot4 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #F93;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot5 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #C99;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot6 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #cc9;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot7 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #3ff;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot8 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #309;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot0::after {
+    content: "Soarele";
+    margin-left: 30px;
+}
+
+.dot1::after {
+    content: "Mercur";
+    margin-left: 30px;
+}
+
+.dot2::after {
+    content: "Venus";
+    margin-left: 30px;
+}
+
+.dot3::after {
+    content: "Pamânt";
+    margin-left: 30px;
+}
+
+.dot4::after {
+    content: "Marte";
+    margin-left: 30px;
+}
+
+.dot5::after {
+    content: "Jupiter";
+    margin-left: 30px;
+}
+
+.dot6::after {
+    content: "Saturn";
+    margin-left: 30px;
+}
+
+.dot7::after {
+    content: "Uranus";
+    margin-left: 30px;
+}
+
+.dot8::after {
+    content: "Neptun";
+    margin-left: 30px;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: orbit 10s linear infinite;
+}
+
+.mercury {
+    animation-duration: 10s;
+    background-color: #C0C0C0;
+}
+
+.venus {
+    animation-duration: 20s;
+    background-color: #fc9;
+}
+
+.earth {
+    animation-duration: 30s;
+    background-color: #36f;
+}
+
+.mars {
+    animation-duration: 40s;
+    background-color: #F93;
+}
+
+.jupiter {
+    animation-duration: 50s;
+    background-color: #C99;
+}
+
+.saturn {
+    animation-duration: 60s;
+    background-color: #cc9;
+}
+
+.uranus {
+    animation-duration: 70s;
+    background-color: #3ff;
+}
+
+.neptune {
+    animation-duration: 80s;
+    background-color: #309;
+}
+
+.butonback {
+    margin-right: 100px;
+    margin-left: 25px;
+    margin-top: 120px;
+    margin-top: 25px;
+    color: rgb(255, 0, 115);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.butonback:hover {
+    color: rgb(255, 255, 255);
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(-150px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+    }
+}
